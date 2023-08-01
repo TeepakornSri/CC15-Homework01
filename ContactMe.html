@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./css/Style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact Me</title>
+    <style>
+        form {
+            border: 1px solid black;
+            width: 500px;
+            padding: 2em;
+            background-color: beige;
+            border-radius: 5px;
+        }
+        input {
+            width: 50%;
+        }
+        select {
+            width: 20%;
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="./index.html"><i class="fa-solid fa-house" style="color: #1264f3;"></i>Home</a> |
+        <a href="./Education.html"><i class="fa-solid fa-school" style="color: #005eff;"></i>Education</a> |
+        <a href="./Work Experience.html"><i class="fa-solid fa-briefcase" style="color: #005eff;"></i>Work Experince</a> |
+        <a href="./ContactMe.html"><i class="fa-solid fa-address-book" style="color: #005eff;"></i>Contact Me</a> |
+    </nav>
+    <hr />
+    <div>
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+            <p>Enter your info.</p>
+            <label for="name">Your name</label><br><br>
+            <input type="text" name="name"> <br><br>
+            <label for="Email">Your E-Mail</label><br><br>
+            <input type="text" name="Email"><br><br>
+            <label for="Gender">Gender</label><br><br>
+            <select name="Gender" id="Gender">
+                <option value=""disable selected hidden>-select-</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+            <label for="textarea">message</label><br><br>
+            <textarea name="textarea" id="message" cols="60" rows="20"></textarea><br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button><br><br>
+        </form>
+    </div>
+</body>
+
+</html>
